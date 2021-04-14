@@ -2,7 +2,6 @@
  * udp_client.c
  * @author Jennifer Norby
  * @version 10/28/2019
- * @reference Duo Lu udp_client.c
  * 
  */
 
