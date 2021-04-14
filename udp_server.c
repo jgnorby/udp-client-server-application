@@ -1,7 +1,6 @@
 /**
  * @author Jennifer Norby
  * @version 11/5/2019
- * @reference Duo Lu udp_server.c
  * udp_server.c
  */
 #include <stdio.h>
