@@ -94,7 +94,7 @@ int main() {
 	char recent_msg[201];
 	socklen_t len;
 
-	// may need to use std::map to hold ass the sessions
+	// may need to use std::map to hold all the sessions
 	// just using an array for demonstration, assuming we are dealing with
 	// at most 16 clients, essentially the database
 	struct session session_array[16];
@@ -194,7 +194,7 @@ int main() {
 			printf("recvfrom() error: %s.\n", strerror(errno));
 			return -1;
 		}
-		// You are supposed to call the sendto() function here to send back
+		// calls the sendto() function here to send back
 		// the echoed message, using "cliaddr" as the destination address.
 		if(recv_len>0){
 			send_buffer[0] = MAGIC_1; // These are constants I define
